@@ -6,7 +6,8 @@ spec:
   type: NodePort
   selector:
     component: web
-  port :
-  - port: 3050
-    targetPort: 3000
-    nodePort: 31515
+  ports:
+    - port: 3050
+      targetPort: 3000
+      nodePort: 31515
+  
